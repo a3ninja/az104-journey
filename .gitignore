@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────
+# a3ninja | az104-journey .gitignore
+# ─────────────────────────────────────────
+
+# === SECRETS & CREDENTIALS ===
+*.pem
+*.key
+*.pfx
+*.p12
+.env
+.env.*
+!.env.example
+*credentials*
+*secrets*
+terraform.tfvars
+*.tfvars
+!example.tfvars
+
+# === TERRAFORM ===
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# === NODE ===
+node_modules/
+npm-debug.log
+
+# === OS & EDITOR JUNK ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/settings.json
+.idea/
+
+# === DOCKER ===
+*.tar
+
+# === LOGS ===
+*.log
+logs/
