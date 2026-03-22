@@ -18,7 +18,6 @@ terraform.tfvars
 
 # === TERRAFORM ===
 .terraform/
-.terraform.lock.hcl
 *.tfstate
 *.tfstate.*
 *.tfplan
