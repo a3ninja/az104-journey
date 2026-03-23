@@ -42,3 +42,26 @@ variable "az104_tag_createdby" {
     description = "Resource created by"
     type = string
 }
+
+# ─────────────────────────────────────────
+# a3ninja | Azure User Variables
+# This will later be migrated to Azure Key Vault
+# ─────────────────────────────────────────
+
+# sensitive set to true, hides sensitive information from the output!
+variable "user_password" {
+    description = "Password for the user"
+    type = string
+    sensitive   = true
+}
+
+variable "user_upn" {
+    description = "User UPN"
+    type = string
+    sensitive   = true
+}
+
+variable "user_displayname" {
+    description = "User display name"
+    type = string
+}

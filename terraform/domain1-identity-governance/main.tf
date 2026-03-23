@@ -10,3 +10,9 @@ resource "azurerm_resource_group" "main" {
     created-by  = var.az104_tag_createdby
   }
 }
+
+resource "azuread_user" "main_user" {
+  user_principal_name = var.user_upn
+  display_name = var.user_displayname
+  password = var.user_password
+}
